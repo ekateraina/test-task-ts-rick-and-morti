@@ -1,0 +1,24 @@
+@import '../mixins.scss';
+
+.container{
+    @include centered-elements;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    .list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 85%;
+        height: inherit;
+        margin: 1rem 0;
+
+    }
+
+    button+button{
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  .filterList {
+    list-style: none;
+    margin-left: 1rem;
+
+    li {
+      display: inline;
+      border: 1px solid $shadow-color;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      padding: 0.3rem;
+
+      &:hover {
+        background-color: $shadow-color;
+        color: black;
+      }
+    }
+  }
+}

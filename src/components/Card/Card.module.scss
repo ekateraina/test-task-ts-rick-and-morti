@@ -1,0 +1,23 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.card{
+    @include centered-elements;
+    flex-direction: column;
+    flex-basis: 30%;
+    height: 20rem;
+    border: 1px solid $border-color;
+    img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    button:disabled{
+        background-color: darken($btn-color, 20%);
+        cursor:not-allowed;
+
+        &:hover{
+            box-shadow: none;
+        }
+    }
+}
